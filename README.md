@@ -2,6 +2,9 @@
 
 This is a movie project based on The Movie Database (TMDB) API https://www.themoviedb.org/documentation/api. This projects display movies, casts, rating, trailers, and various other data.
 
+## Trello board format
+https://trello.com/b/Js0U4iu3/movie-project
+
 ## Requirements
 
 1. Setting up the project:
