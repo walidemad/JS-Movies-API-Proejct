@@ -6,8 +6,6 @@ This is a movie project based on The Movie Database (TMDB) API https://www.themo
 
 1. Setting up the project:
    - Set up the project repository on GitHub.
-   - Install and configure Prettier and ESLint.
-   - Install and configure Husky.
    - Decide on the design and layout of the website.
 2. Home Page:
    - Retrieve and display data for the most popular movies, trending movies, and latest trailer from the TMDB API.
