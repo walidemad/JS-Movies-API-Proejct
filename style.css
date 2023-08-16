@@ -16,12 +16,11 @@ header{
 padding:  1rem ;
 display: flex;
 justify-content: flex-end;
-background: linear-gradient(42deg, rgba(38,75,119,1) 10%, rgba(56,134,161,1) 48%, rgba(25,90,112,1) 100%);
 }
 
 .search{
 background-color: transparent;
-border: 2px solid #22254b;
+border: 2px solid #ebecf4;
 padding: 0.5rem 1rem ;
 border-radius: 50px;
 font-size: 1rem;
@@ -100,3 +99,44 @@ transition: transform 0.3s ease-in;
 .movie:hover .overview{
 transform: translateY(0);
 }
+
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #c01e1e00;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fbf6f7;
+    height: var(--nav-height);
+    background-color: #22254bd3;
+}
+
+.nav a {
+    color: #fbf6f7;
+}
+
+
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-menu li ~ li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
