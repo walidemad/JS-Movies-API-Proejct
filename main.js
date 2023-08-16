@@ -2,6 +2,7 @@ const ApiKey = "api_key=cd48ad83ac4295056b2051af96b68456"
 const BaseUrl =`https://api.themoviedb.org/3/`
 const ApiUrl = BaseUrl + `trending/all/day?` + ApiKey;
 const imgUrl = `https://image.tmdb.org/t/p/w500`
+const searchUrl = BaseUrl + `/search/movie?` + ApiKey;
 const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
@@ -43,4 +44,10 @@ data.forEach(movie => {
 }
 form.addEventListener('submit', (e) =>{
   e.preventDefault()
+  const searchTerm = search.value;
+  if(searchTerm) {
+    getMovies(searchUrl + '&query='+searchTerm )
+  }else{
+    getMovies(ApiUrl)
+  }
 })
