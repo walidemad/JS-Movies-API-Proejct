@@ -188,7 +188,42 @@ section {
     width: 100%;
   }
   
-  .contact-form {
-    width: 100%;
-  }
+
 }
+.nav-wrapper {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #c01e1e00;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fbf6f7;
+  background-color: #22254bd3;
+}
+
+.nav a {
+  color: #fbf6f7;
+}
+
+
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+
+.nav-menu a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
